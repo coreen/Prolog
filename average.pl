@@ -12,3 +12,16 @@ mysum([X|Xs],S) :- mysum(Xs,S1), S is S1+X.
 mylength([],0).
 mylength([_|Xs],N) :- mylength(Xs,N1), N is N1+1.
 
+
+/* test cases for average rule */
+:- begin_tests(assignment5).
+
+/* empty list, should fail */
+test(average1,[fail]) :- average([],5).
+/* regular list, should succeed */
+test(average2) :- average([1,2,3],2).
+
+:- end_tests(assignment5).
+
+/* run the tests above */
+:- run_tests.
