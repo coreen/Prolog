@@ -1,0 +1,1 @@
+Logic programming exercise following Werner Hett's https://sites.google.com/site/prologsite/prolog-problems
