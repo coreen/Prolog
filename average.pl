@@ -14,14 +14,14 @@ mylength([_|Xs],N) :- mylength(Xs,N1), N is N1+1.
 
 
 /* test cases for average rule */
-:- begin_tests(assignment5).
+:- begin_tests(average).
 
 /* empty list, should fail */
 test(average1,[fail]) :- average([],5).
 /* regular list, should succeed */
 test(average2) :- average([1,2,3],2).
 
-:- end_tests(assignment5).
+:- end_tests(average).
 
 /* run the tests above */
 :- run_tests.
